@@ -1,0 +1,77 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D9A78B;
+}
+
+#app {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #D9A78B;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.216);
+}
+
+.ui-section {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #025951;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #025951;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #25a87e;
+}
+
+.book-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.book-item span {
+    font-weight: bold;
+}
+
+#favorites {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}

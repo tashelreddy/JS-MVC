@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBar Reading Event System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        
+        <div class="ui-section">
+            <h1>BookBar Reading Events</h1>
+            <h2>Add New Book</h2>
+            <form id="book-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="text" id="genre" placeholder="Genre" required>
+                <input type="date" id="event-date" required>
+                <input type="time" id="event-time"  required> 
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+        <br>
+        <div id="book-list">
+            <!-- Display book list here -->
+        </div>
+
+        <div class="ui-section">
+            <h2>Favorites</h2>
+            <div id="favorites">
+                <!-- Display favorite author and book here -->
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
